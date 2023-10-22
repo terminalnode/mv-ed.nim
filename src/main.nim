@@ -9,7 +9,7 @@ import std/tables
 import mved/editorutils
 import mved/strutils
 import mved/tmpfile
-  
+
 when isMainModule:
   let
     (editor, editorVar) = getEditorOrDie()
@@ -33,7 +33,7 @@ when isMainModule:
     """.unindent
 
   let padding = (paths.len + 1).intToStr.len
-  var prevParent: string 
+  var prevParent: string
 
   for idx, value in paths.pairs:
     let parent = parentDir(value)

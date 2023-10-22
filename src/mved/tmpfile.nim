@@ -13,7 +13,7 @@ proc writeFileOrDie*(
   except IOError:
     echo "Failed to write to file: " & filename
     quit(1)
-    
+
 ## Alias for `readLines` that will print an error message
 ## and exit if it fails to read the file.
 proc readLinesOrDie*(
@@ -35,7 +35,7 @@ proc readLinesOrDie*(
 proc getTempFile*(): string =
   let tempDir = getTempDir()
   let path = tempDir / "mv-ed"
-  
+
   if fileExists path:
     removeFile path
 
