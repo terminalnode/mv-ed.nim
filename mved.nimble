@@ -5,8 +5,7 @@ description   = "Move and/or rename multiple files at once using your favourite 
 license       = "MIT"
 binDir        = "bin"
 srcDir        = "src"
-bin           = @["main"]
-namedBin     = { "bin/main": "mv-ed" }.toTable()
+namedBin     = { "main": "mv-ed" }.toTable()
 
 
 # Dependencies
